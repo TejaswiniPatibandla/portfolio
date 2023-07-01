@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio website</title>
+    <link rel="stylesheet" href="style.css" class="stylesheet">
+    <script src="https://kit.fontawesome.com/669cf8a1c6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFDFdKD9dAOniLZXgDxsLnLbxm7ymPpwbf2A&usqp=CAU"  class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()""></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Enthusiastic SDE</p>
+                <h1>Hi,I'am <span>Tejaswini</span> Patibandla</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------about pg -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="mypic.jpg" height=400px; width=250px;  alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I'am a student of Andhra University college of engineering for women.I'am currently pursuing B.Tech 4th year in computer science and engineering</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                        <li><span>C</span><br>I have started my programming initially with c language. </li>
+                        <li><span>Java</span><br>Along with basic java i have learnt about OOPs concepts,collection frameworks</li>
+                        <li><span>python</span><br>In python i have knowledge about basic concepts along with files,numpy and pandas</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                        <!-- <li><span>29290-dhgurf</span><br>Lorem ipsum dolor sit amet consectetur </li> -->
+                        <li><span>dec 2022-jun 2023</span><br>intern in I and T labs in full stack development </li>
+                        <li><span>Apr 2022-jul 2022</span><br>I have completed frontend development internship in Atelia Software Pvt Limited </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                        <li><span>2020-2024</span><br>B.Tech CSE in Andhra university college of engineering for women. </li>
+                        <li><span>2018-2020</span><br>Intermediate in Sri Akshara junior college. </li>
+                        <li><span>2018</span><br>10th class from Ravindra Bharathi public School </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----skills -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>During the full stack development internship ,I have learned different Technologies like Html,Css,javascript.</p>
+                    <a href="https://github.com/TejaswiniPatibandla">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-codepen"></i>
+                    <h2>Java</h2>
+                    <p>I have learnt java from Coding ninjas guided path and got completion certificate</p>
+                    <a href="https://www.linkedin.com/in/patibandla-tejaswini-77b034238/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>SQL</h2>
+                    <p>I have learned about mysql and rdbms along with php for backend connection of webpages to database.</p>
+                    <a href="https://github.com/TejaswiniPatibandla">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----portfiolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="to-do.png" height=300px; width=250px; alt="">
+                <div class="layer">
+                    <h3>To-do list</h3>
+                    <p>I have used html,css and javascript to create to-do application</p>
+                    <a href="https://github.com/TejaswiniPatibandla"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+                <div class="work">
+                    <img src="insta.png" height=300px; width=250px; alt="">
+                <div class="layer">
+                    <h3>Instagram login page</h3>
+                    <p>I have created an UI similar to Login page of instagram</p>
+                    <a href="https://github.com/TejaswiniPatibandla/FSDinternship"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+                <div class="work">
+                    <img src="friend.png" height=300px; width=250px; alt="">
+                <div class="layer">
+                    <h3>friend page</h3>
+                    <p>this page includes details about your bestfriend</p>
+                    <a href="https://github.com/TejaswiniPatibandla/FSDinternship"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            </div>
+            <a href="https://www.linkedin.com/in/patibandla-tejaswini-77b034238/" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- conytacct---- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                <p>contact@me</p>
+                <p>tejaswini11122000@gmail.com</p>
+            <div class="social-icons">
+                <a href="https://github.com/TejaswiniPatibandla"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/patibandla-tejaswini-77b034238/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/___tejaswini_26/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          <a href="Resume (5).pdf" download class="btn btn2">Download CV</a>
+        </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+
+                        <input type="text" name="Name" placeholder="enter your name" required>
+                        <input type="email" name="Email" placeholder="enter your mail" required>
+                        <textarea name="Message"  rows="6" placeholder="message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-copyright"> 2023 </i>All rights reserved </p>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyYtaPHJhJMIW1ybWzRYdgvb54CFa6R4cWq2xBL_CW1red6XiSinnQru_QFs79EsfwCGw/exec'
+        const form = document.forms['submit-to-google-sheet']
+      const msg=document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => { 
+        msg.innerHTML="successfully sent"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+    })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
